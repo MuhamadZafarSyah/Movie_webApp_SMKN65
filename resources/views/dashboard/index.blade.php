@@ -8,7 +8,7 @@
 @section('admin_content')
     {{-- @include('dashboard.components.sidebar') --}}
     <div class="mt-24 hiddenscroll">
-        <h1 class="text-3xl mb-4 font-bold">List Film</h1>
+        <h1 class="text-3xl mb-4 font-bold">List Film Keren</h1>
         <div class="grid grid-cols-2 lg:grid-cols-3 mx-auto gap-y-4">
             @foreach ($movies as $item)
                 <div class="p-2 rounded-3xl darkmodebg lg:w-60 w-48 mx-auto relative">
