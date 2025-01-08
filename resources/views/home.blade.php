@@ -28,7 +28,7 @@
                     <div class="col-12">
                         <div class="section__carousel-wrap">
                             <div class="section__interview owl-carousel" id="flixtv">
-                                @foreach ($movies_banner->random(6) as $item)
+                                @foreach ($movies_banner->isEmpty() ? $movies_banner : $movies_banner->random(min(6, $movies_banner->count())) as $item)
                                     <div class="interview">
                                         <a href="/details-movie/{{ $item->id }}" class="interview__cover">
                                             <img style="height: 200px; object-fit: contain"
